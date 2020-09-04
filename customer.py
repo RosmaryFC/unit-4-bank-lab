@@ -24,12 +24,20 @@ class Customer(Bank):
         account_type = account_type
         if account_type == 's':
             self.savings += amount
+            print(f"savings {self.savings}")
         elif account_type == 'c':
             self.checking += amount
-
+            print(f"checking {self.checking}")
 
     def withdraw(self, account_type, amount):
-        pass
+        account_type = account_type
+        if account_type == 's':
+            self.savings -= amount
+            print(f"savings {self.savings}")
+        elif account_type == 'c':
+            self.checking -= amount
+            print(f"checking {self.checking}")
+
 
     def transfer(self, from_account, to_account):
         pass

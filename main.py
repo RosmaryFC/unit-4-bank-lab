@@ -1,3 +1,4 @@
+from bank import Bank
 from customer import Customer
 
 
@@ -35,11 +36,22 @@ def read_csv(file_name):
 all_data = read_csv("bank.csv")
 print(all_data)
 
-cust_1 = all_data['10001']
-print(cust_1)
+acme_bank = Bank('ACME Bank')
+# acme_bank.seed_customers(all_data)
+# print(acme_bank.customers)
 
-customer_suresh = Customer('10001', cust_1[0], cust_1[1], cust_1[2], cust_1[3], cust_1[4])
-# customer_suresh = Customer(cust_1, cust_1, cust_1, cust_1)
+# cust_1 = all_data['10001']
+# print(cust_1)
+#
+# customer_suresh = Customer('10001', cust_1[0], cust_1[1], cust_1[2], cust_1[3], cust_1[4])
+# # customer_suresh = Customer(cust_1, cust_1, cust_1, cust_1)
+#
+# print(customer_suresh.get_info())
+#
+# customer_suresh.deposit('c', 5)
+# customer_suresh.withdraw('c', 10)
 
-print(customer_suresh.get_info())
 
+# def new_customer():
+#     password = input("create a password")
+#     first_name = input("what's your first name?")
