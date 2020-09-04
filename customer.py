@@ -1,7 +1,6 @@
-from bank import Bank
 
 
-class Customer(Bank):
+class Customer():
 
     def __init__(self,account, first_name, last_name, password, checking=0, savings=0):
         self.__account = account

@@ -34,11 +34,11 @@ def read_csv(file_name):
 
 
 all_data = read_csv("bank.csv")
-print(all_data)
+# print(all_data)
 
 acme_bank = Bank('ACME Bank')
-# acme_bank.seed_customers(all_data)
-# print(acme_bank.customers)
+acme_bank.seed_customers(all_data)
+print(acme_bank.customers)
 
 # cust_1 = all_data['10001']
 # print(cust_1)
